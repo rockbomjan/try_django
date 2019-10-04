@@ -1,0 +1,24 @@
+1. Ceate new product objects in python shell. We created in django admin.
+2. Run python shell in which all the stuff of django will work.
+i) >python manage.py shell
+output:
+Python 3.6.7rc2 (v3.6.7rc2:4893861ab5, Oct 13 2018, 17:34:23) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>>from products.models import Product
+>>>Product.objects.all() i.e. its a django command to list all the objects
+Output: <QuerySet [<Product: Product object (1)>]>
+It shows that there only one item.
+>>>Product.objects.create(title = 'New Product 2', description = 'another product', price = '1254', summary = 'sweet') i.e. creating another product2 object
+Output: <Product: Product object (2)>
+>>> Product.objects.all()
+<QuerySet [<Product: Product object (1)>, <Product: Product object (2)>, <Product: Product object (3)>, <Product: Product object (4)>, <Product: Product object (5)>]>
+
+
+
+
+
+
+ii) for normal shell 
+>python
+

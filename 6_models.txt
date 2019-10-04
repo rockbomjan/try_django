@@ -1,0 +1,42 @@
+1. Models allow us to store data in the database in a very specific way.
+2. Class inside the models allow us to declare fields that are going to be mapped into the database. It's something logical for the data we need.
+
+from django.db import models
+
+# Create your models here.
+class Product(models.Model):
+    title = models.TextField()
+    description = models.TextField()
+    price = models.TextField()
+
+3. Now, we have a new app products and new model.
+4. The rule of thumb is whenever you change things in models.py, you have to do atleast two things. 
+i) When the app is created, at least it should be included to INSTALLED_APPS in settings.py
+ii) We need to make sure that it is in our database.
+iii) Also, if we make any changes to our models should be in the database.
+5. These are the commands always you needed to run after we update models.py
+i) python manage.py makemigrations
+
+$ python manage.py makemigrations
+Migrations for 'products':
+  products\migrations\0001_initial.py
+    - Create model Products
+ii) python manage.py migrate
+
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, products, contenttypes, sessions
+Running migrations:
+  Applying products.0001_initial... OK
+6. Now, the database knows about this models and we can add other changes and do the migrations
+7. We can view the models in django admin
+8. Now, go to admin.py of the products app and update it
+
+from django.contrib import admin
+from .models import Product # relative import: importing class Product from models.py
+
+# Register your models here.
+admin.site.register(Product)
+
+9. We have created a new product and it is saved in the database. 
+Now, log into admin in django server add the products and view the products.

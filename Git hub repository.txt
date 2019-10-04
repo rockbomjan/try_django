@@ -1,0 +1,16 @@
+https://github.com/login
+repository is a directory
+>git --version
+>git init (hidden git folder is created>
+> git status (files that are not commited or saved)
+> git add -A (files are added to a stage that are not commited)
+>git status(files ready to commit)
+>git commit -m "first commit"
+>git status(to see if any files new or modified)
+
+$ git add -A
+warning: LF will be replaced by CRLF in Chapter 18 Read and Write files/index1.html.
+The file will have its original line endings in your working directory
+
+>git remote add origin https://github.com/rockbomjan/python-tutorial.git
+>git push -u origin master

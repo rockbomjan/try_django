@@ -1,0 +1,2 @@
+In the cmd window, type the following:
+python manage.py migrate

@@ -1,0 +1,4 @@
+1. command: django-admin startproject try_django
+2. run server: go into try_django and execute the command: python manage.py runserver
+3. open chrome and type: localhost:8000 in the address field and hit enter
+4. All about settings.py: see the file for more information

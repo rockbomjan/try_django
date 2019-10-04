@@ -1,0 +1,19 @@
+Apps are the components of django project. They are not apps like in mobile phones.
+
+Dynamic Web Page: Having data stored in a database add to and we can see. i.e. interchange of data
+For instance of instagram: When you post something into the instagram, you are adding something to its database.
+For this purpose we have to build apps as they are called components.
+1. Now, in the command prompt type: python manage.py startapp products i.e. it's a products application
+2. The app has its own admin, views, models.
+3. Include the app product to INSTALLED_APPS in settings.py
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'products',
+]
+

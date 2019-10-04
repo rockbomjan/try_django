@@ -1,0 +1,8 @@
+>Settings
+>Tools
+>Terminal
+>shell path: "C:\Program Files\Git\bin\sh.exe" --login
+
+You must add to PATH variable
+
+;C:\Program Files\Git\bin

@@ -1,0 +1,52 @@
+1. command: F:\web_development\virtualenv -p python myvenv
+OR
+F:\virtualenv myvenv
+Output: 
+F:\web_development\trydjango>virtualenv -p python myvenv
+Running virtualenv with interpreter C:\Users\Rock Bomjan\AppData\Local\Programs\Python\Python36\python.exe
+Already using interpreter C:\Users\Rock Bomjan\AppData\Local\Programs\Python\Python36\python.exe
+Using base prefix 'C:\\Users\\RockBomjan\\AppData\\Local\\Programs\\Python\\Python36'
+New python executable in F:\web_development\trydjango\myvenv\Scripts\python.exeInstalling setuptools, pip, wheel...
+done.
+2. Activate virtual environment
+command: f:\myvenv\scripts\activate
+OR
+f:\. scripts\activate
+
+3. To see the packages installed: f:\pip freeze
+4. f:\django-admin
+
+(myvenv) F:\web_development\trydjango>django-admin
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Reque
+sted setting INSTALLED_APPS, but settings are not configured. You must either define the environment
+ variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).

@@ -1,0 +1,8 @@
+1. For the admin privelage, create superuser in django:
+>python manage.py createsuperuser
+2. Leave the default user name
+3. Skip email.
+4. Password/confirf: django1234
+5. Log into admin: http://localhost:8000/admin
+5. Type your superusername and password
+6. The database storage for the django is db.sqlite3 in the project folder try_django.
